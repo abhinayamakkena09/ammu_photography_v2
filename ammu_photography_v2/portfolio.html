@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | AmmuPhotography</title>
+  <meta name="description" content="Browse our curated collection of wedding, pre-wedding, and portrait photography.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .portfolio-full-card { transition: opacity 0.3s ease, transform 0.3s ease; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Header -->
+  <header scrolled>
+    <div class="logo" style="color: var(--ink);">Ammu</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <span style="background: var(--ink);"></span>
+      <span style="background: var(--ink);"></span>
+      <span style="background: var(--ink);"></span>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/portfolio_wedding_1777954465094.png');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Our Portfolio</h1>
+      <p>A curated collection of our finest work</p>
+    </div>
+  </div>
+
+  <!-- Portfolio Gallery -->
+  <section style="padding: 7rem 5%; max-width: 1400px; margin: 0 auto;">
+    <!-- Filter Tabs -->
+    <div class="filter-tabs reveal">
+      <button class="filter-tab active" data-filter="all">All Work</button>
+      <button class="filter-tab" data-filter="wedding">Wedding</button>
+      <button class="filter-tab" data-filter="pre-wedding">Pre-Wedding</button>
+      <button class="filter-tab" data-filter="portrait">Portraits</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="portfolio-full-grid">
+      <!-- Wedding -->
+      <div class="portfolio-full-card reveal" data-category="wedding">
+        <img src="assets/portfolio_wedding_1777954465094.png" alt="Wedding Photography">
+        <div class="p-overlay"><span>Wedding Story</span></div>
+      </div>
+      <div class="portfolio-full-card reveal reveal-delay-1" data-category="wedding">
+        <img src="assets/new_wedding_1.jpg" alt="Wedding Photography">
+        <div class="p-overlay"><span>Sacred Vows</span></div>
+      </div>
+      <div class="portfolio-full-card reveal reveal-delay-2" data-category="wedding">
+        <img src="assets/new_wedding_2.jpg" alt="Wedding Photography">
+        <div class="p-overlay"><span>Eternal Love</span></div>
+      </div>
+      <div class="portfolio-full-card reveal" data-category="wedding">
+        <img src="assets/hero_wedding_1777954365765.png" alt="Wedding Photography">
+        <div class="p-overlay"><span>Golden Moments</span></div>
+      </div>
+
+      <!-- Pre-Wedding -->
+      <div class="portfolio-full-card reveal reveal-delay-1" data-category="pre-wedding">
+        <img src="assets/portfolio_prewedding_1777954480729.png" alt="Pre-Wedding Photography">
+        <div class="p-overlay"><span>Golden Hour</span></div>
+      </div>
+      <div class="portfolio-full-card reveal reveal-delay-2" data-category="pre-wedding">
+        <img src="assets/new_prewedding_1.png" alt="Pre-Wedding Photography">
+        <div class="p-overlay"><span>Love in Bloom</span></div>
+      </div>
+      <div class="portfolio-full-card reveal" data-category="pre-wedding">
+        <img src="assets/new_prewedding_2.png" alt="Pre-Wedding Photography">
+        <div class="p-overlay"><span>Romance</span></div>
+      </div>
+
+      <!-- Portrait -->
+      <div class="portfolio-full-card reveal reveal-delay-1" data-category="portrait">
+        <img src="assets/portfolio_portrait_1777954570241.png" alt="Portrait Photography">
+        <div class="p-overlay"><span>Essence</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="min-height: 45vh;">
+    <div class="cta-bg" style="background-image: url('assets/new_prewedding_2.png');"></div>
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <span class="section-label">Ready to Begin?</span>
+      <h2 class="cta-title">Let's Write <em>Your</em> Story</h2>
+      <a href="contact.html" class="cta-btn">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Ammu Photography</div>
+    <div class="footer-copy">&copy; 2026 AmmuPhotography. All Rights Reserved.</div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/1234567890?text=Hi,%20I%E2%80%99m%20interested%20in%20booking%20a%20shoot.%20Can%20you%20share%20details%20and%20availability%3F"
+    target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Auto-add scrolled class on inner pages
+    document.querySelector('header').classList.add('scrolled');
+    document.querySelectorAll('.menu-toggle span').forEach(s => s.style.background = 'var(--ink)');
+  </script>
+</body>
+
+</html>

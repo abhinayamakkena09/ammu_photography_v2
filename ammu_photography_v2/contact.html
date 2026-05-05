@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AmmuPhotography</title>
+  <meta name="description" content="Get in touch to book your wedding, pre-wedding, or portrait photography session.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Ammu</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/new_wedding_2.jpg');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Let's Connect</h1>
+      <p>Every great story starts with a conversation</p>
+    </div>
+  </div>
+
+  <!-- Contact Content -->
+  <section class="contact-section">
+    <div class="contact-grid">
+      <!-- Left: Info -->
+      <div class="contact-left">
+        <div class="reveal">
+          <span class="section-label">Reach Out</span>
+          <h2 class="section-title">Ready to <em>Begin?</em></h2>
+        </div>
+        <p class="reveal reveal-delay-1">I'd love to hear about your upcoming event or project. Reach out via WhatsApp for the fastest response, or drop me a note through the form.</p>
+
+        <div class="contact-detail reveal reveal-delay-1">
+          <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-detail-text">
+            <h4>Location</h4>
+            <p>Your City — Available for travel worldwide</p>
+          </div>
+        </div>
+        <div class="contact-detail reveal reveal-delay-2">
+          <div class="contact-detail-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-detail-text">
+            <h4>WhatsApp</h4>
+            <p>+1 (234) 567-890</p>
+          </div>
+        </div>
+        <div class="contact-detail reveal reveal-delay-2">
+          <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-detail-text">
+            <h4>Email</h4>
+            <p>hello@ammuphotography.com</p>
+          </div>
+        </div>
+        <div class="contact-detail reveal reveal-delay-3">
+          <div class="contact-detail-icon"><i class="fab fa-instagram"></i></div>
+          <div class="contact-detail-text">
+            <h4>Instagram</h4>
+            <p>@ammuphotography</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/1234567890?text=Hi,%20I%E2%80%99m%20interested%20in%20booking%20a%20shoot.%20Can%20you%20share%20details%20and%20availability%3F"
+          target="_blank" class="contact-wa-btn reveal reveal-delay-3">
+          <i class="fab fa-whatsapp"></i>
+          Message on WhatsApp
+        </a>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="reveal reveal-delay-1">
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Ammu & Ravi" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 98765 43210">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="type">Type of Shoot</label>
+              <select id="type" required>
+                <option value="" disabled selected>Select type</option>
+                <option value="Wedding">Wedding Photography</option>
+                <option value="Pre-Wedding">Pre-Wedding Shoot</option>
+                <option value="Portrait">Portrait Session</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="date">Event Date</label>
+              <input type="date" id="date">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="location">Location / Venue</label>
+            <input type="text" id="location" placeholder="Where is your event?">
+          </div>
+          <div class="form-field">
+            <label for="message">Tell Me Your Story</label>
+            <textarea id="message" placeholder="Share details about your event, what you're looking for, and anything special you'd like me to know..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            Send Inquiry
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decorative gallery strip -->
+  <section style="overflow: hidden; padding: 0; height: 280px; display: flex;">
+    <img src="assets/portfolio_wedding_1777954465094.png" alt="" style="width: 25%; object-fit: cover; flex-shrink: 0; filter: brightness(0.8);">
+    <img src="assets/new_prewedding_1.png" alt="" style="width: 25%; object-fit: cover; flex-shrink: 0; filter: brightness(0.8);">
+    <img src="assets/portfolio_portrait_1777954570241.png" alt="" style="width: 25%; object-fit: cover; flex-shrink: 0; filter: brightness(0.8);">
+    <img src="assets/new_wedding_1.jpg" alt="" style="width: 25%; object-fit: cover; flex-shrink: 0; filter: brightness(0.8);">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Ammu Photography</div>
+    <div class="footer-copy">&copy; 2026 AmmuPhotography. All Rights Reserved.</div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/1234567890?text=Hi,%20I%E2%80%99m%20interested%20in%20booking%20a%20shoot.%20Can%20you%20share%20details%20and%20availability%3F"
+    target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelector('header').classList.add('scrolled');
+  </script>
+</body>
+
+</html>
